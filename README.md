@@ -4,7 +4,7 @@ Uma loja virtual de roupas, sapatos e acessórios.
 
 ## Descrição
 
-Esse projeto utiliza da versão **8.x do Laravel**, com o gerenciador com baseado nos componentes do template APEX que fica na pasta `/original-theme`, e no website principal com componentes baseados no framework de CSS **Bootstrap 4**.
+Esse projeto utiliza da versão **8.x do Laravel** e no website principal com componentes baseados no framework de CSS **Bootstrap 5**.
 
 ## Iniciando no projeto
 
