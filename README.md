@@ -44,4 +44,4 @@ Abra [http://localhost:8000](http://localhost:8000) no seu browser para ver o pr
 
 ## Ajuda
 
-Caso ocorra algum problema, verificar as versões das dependências.
+Caso ocorra algum problema, verificar as versões das dependências ou entre em contato comigo.
