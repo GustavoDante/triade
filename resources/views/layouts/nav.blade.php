@@ -1,15 +1,16 @@
 <nav class="navbar navbar-expand-md ">
-    <div class="nav nav-content navbar-nav">
+    <div class="nav nav-content navbar-nav d-flex justify-content-between">
         <a href="{{route('website.home')}}">
             <img src="{{asset('img/dark-logo.png')}}" class="brand-logo" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapse_target">
+        <div class="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse nav-menu" id="collapse_target">
             <a class="navbar-brand" href="#"><img src="" alt=""></a>
           
 
