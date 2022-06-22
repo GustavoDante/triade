@@ -21,6 +21,10 @@
     justify-content: space-between;
 }
 
+.mobile-menu{
+    width: 55px;
+
+}
 .brand-logo{
     height:60px;
 }
@@ -89,20 +93,19 @@
     padding: 10px 10vw;
     justify-content: center;
     list-style: none;
-    border-top: 1px solid #d1d1d1;
+    margin-bottom: 0;
 }
 
 .link{
     text-transform: capitalize;
-    padding: 0 10px;
     margin: 0 5px;
     text-decoration: none;
     background: #383838;
     color: rgba(255, 255, 255, 0.75);
     transition: .5s;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: small;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     opacity: 1;
 }
 
@@ -118,4 +121,35 @@
 
 .link-item{
     margin-inline: 10px;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .link {
+        font-size: small;
+        padding: 3px 7px;
+    }
+    .link-item{
+        margin-inline: 1px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .link {
+        font-size: x-small;
+        padding: 3px 7px;
+    }
+    .link-item{
+        margin-inline: 1px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .link {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+    .link-item{
+        margin-inline: 0.2px;
+    }
 }

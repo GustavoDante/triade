@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md ">
-    <div class="nav nav-content navbar-nav d-flex justify-content-between">
+    <div class="nav nav-content">
         <a href="{{route('website.home')}}">
             <img src="{{asset('img/dark-logo.png')}}" class="brand-logo" alt="">
         </a>
@@ -28,13 +28,16 @@
         </div>
     </div>    
 </nav>
-<ul class="links-container">
-  <li class="link-item"><a href="#" class="link active-link">Inicial</a></li>
-  <li class="link-item"><a href="#" class="link">Mulher</a></li>
-  <li class="link-item"><a href="#" class="link">Homem</a></li>
-  <li class="link-item"><a href="#" class="link">Criança</a></li>
-  <li class="link-item"><a href="#" class="link">acessórios</a></li>
-</ul>
+<div class="container">
+    <ul class="links-container">
+        <li class="link-item"><a href="#" class="link active-link">Inicial</a></li>
+        <li class="link-item"><a href="#" class="link">Mulher</a></li>
+        <li class="link-item"><a href="#" class="link">Homem</a></li>
+        <li class="link-item"><a href="#" class="link">Criança</a></li>
+        <li class="link-item"><a href="#" class="link">acessórios</a></li>
+      </ul>
+</div>
+
 
 
 @include('layouts.cart')

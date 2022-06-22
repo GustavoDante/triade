@@ -3,6 +3,7 @@
 @section('content')
     
     <header class="hero-section ">
+        <img class="img-header" src="{{asset('img/header.png')}}" alt="">
         <div class="content">
             <img src="{{asset("img/light-logo.png")}}" class="logo" alt="">
             <p class="sub-heading">Preço baixo, qualidade e beleza em um só lugar</p>
@@ -36,16 +37,6 @@
         </a>
     </section>
 
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
     <section class="product">
         <h2 class="product-category">Sapatos</h2>
         <button class="pre-btn"><img src="{{asset('img/arrow.png')}}" alt=""></button>
@@ -85,11 +76,11 @@
             let containerWidth = containerDimenstions.width;
 
             nxtBtn[i].addEventListener('click', () => {
-                item.scrollLeft += containerWidth;
+                item.scrollLeft += (containerWidth/2);
             })
 
             preBtn[i].addEventListener('click', () => {
-                item.scrollLeft -= containerWidth;
+                item.scrollLeft -= (containerWidth/2);
             })
         })
     </script>

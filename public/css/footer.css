@@ -58,3 +58,17 @@ footer{
     color: #fff;
     background: rgba(0, 0, 0, 0.2);
 }
+
+@media only screen and (max-width: 425px) {
+    .footer-credit {
+        font-size: 12px;
+    }
+    .footer-content .logo{
+        width: 100px;
+        height: 50px;
+    }
+    .social-link{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
