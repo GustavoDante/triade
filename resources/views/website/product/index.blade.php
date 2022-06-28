@@ -1,17 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="product-details">
-        <div class="image-slider" id="image-slider">
-            <img src="{{asset($product->image)}}" id="main-product-img" class="main-product-img">
-            <div class="product-images">
-                <img src="{{asset($product->image_2)}}" class="product-img" alt="">
-                <img src="{{asset($product->image_3)}}" class="product-img" alt="">
-                <img src="{{asset($product->image_4)}}" class="product-img" alt="">
-                <img src="{{asset($product->image_5)}}" class="product-img" alt="">
+    <section class="product-details row">
+        <div class="col-6 col-sm-8 col-md-8 col-lg-8 col-xl-6 ">
+            <div class="image-slider" id="image-slider">
+                <div class="product-images">
+                    <img src="{{asset($product->image_2)}}" class="product-img" alt="">
+                    <img src="{{asset($product->image_3)}}" class="product-img" alt="">
+                    <img src="{{asset($product->image_4)}}" class="product-img" alt="">
+                    <img src="{{asset($product->image_5)}}" class="product-img" alt="">
+                </div>
+                <img src="{{asset($product->image)}}" id="main-product-img" class="main-product-img">
             </div>
         </div>
-        <div class="details">
+        <div class="details col-4 col-sm-4 col-md-4 col-lg-4 col-xl-6">
             <h2 class="product-brand">{{$product->title}}</h2>
             <p class="product-short-description">{{$product->short_description}}</p>
             <span class="product-price">R${{number_format($product->discount ? $product->price * (1 - $product->discount) : $product->price, 2, ',', ' ')}}</span>

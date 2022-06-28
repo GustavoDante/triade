@@ -6,10 +6,11 @@
 }
 
 .image-slider{
-    width: 500px;
     height: 500px;
     position: relative;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .image-slider img{
@@ -18,18 +19,11 @@
 }
 
 .product-images{
-    position: absolute;
-    bottom: -20%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 90%;
+    flex-direction: column;
+    display: flex;
     background: #fff;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 100px;
-    grid-gap: 10px;
-    padding: 10px;
+    align-self: center;
 }
 
 .product-images img{
@@ -121,8 +115,4 @@
     margin-right: 2%;
     background: #383838;
     color: #fff;
-}
-
-.main-product-img{
-    width: 100%;
 }
