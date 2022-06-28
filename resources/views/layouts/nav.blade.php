@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md ">
+<nav class="navbar navbar-expand-md">
     <div class="nav nav-content">
         <a href="{{route('website.home')}}">
             <img src="{{asset('img/dark-logo.png')}}" class="brand-logo" alt="">
@@ -28,7 +28,7 @@
         </div>
     </div>    
 </nav>
-<div class="container">
+<div  class="border-bot">
     <ul class="links-container">
         <li class="link-item"><a href="#" class="link active-link">Inicial</a></li>
         <li class="link-item"><a href="#" class="link">Mulher</a></li>

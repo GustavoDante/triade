@@ -2,8 +2,8 @@
 
 @section('content')
     <section class="product-details">
-        <div class="image-slider">
-            <img src="{{asset($product->image)}}" alt="" style="width: 100%" id="main-product-img">
+        <div class="image-slider" id="image-slider">
+            <img src="{{asset($product->image)}}" id="main-product-img" class="main-product-img">
             <div class="product-images">
                 <img src="{{asset($product->image_2)}}" class="product-img" alt="">
                 <img src="{{asset($product->image_3)}}" class="product-img" alt="">
@@ -60,6 +60,7 @@
             @endforeach
         </div>
     </section>
+    
 
 @endsection
 
@@ -98,13 +99,6 @@
             }
         );
 
-        // $('#main-product-img').hover(function () {
-        //         this.style.width = (this.clientWidth * 10) + "px"; 
-        //     }, function () {
-        //         this.style.width = (this.clientWidth / 10) + "px"; 
-        //     }
-        // );
-
         $('.size-label-btn').click(function () {
             $('.size-label-btn').removeClass('checked');
             $(this).addClass('checked');
@@ -114,5 +108,7 @@
         $('#PP-size').change(function (){
             console.log($(this).attr('value'));
         })
+
+
     </script>    
 @endpush
