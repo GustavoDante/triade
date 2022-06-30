@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="product-details row">
-        <div class="col-6 col-sm-8 col-md-8 col-lg-8 col-xl-6 ">
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-7 ">
             <div class="image-slider" id="image-slider">
                 <div class="product-images">
                     <img src="{{asset($product->image_2)}}" class="product-img" alt="">
@@ -13,29 +13,37 @@
                 <img src="{{asset($product->image)}}" id="main-product-img" class="main-product-img">
             </div>
         </div>
-        <div class="details col-4 col-sm-4 col-md-4 col-lg-4 col-xl-6">
+        <div class="details col-sm-4 col-md-4 col-lg-4 col-xl-5">
             <h2 class="product-brand">{{$product->title}}</h2>
             <p class="product-short-description">{{$product->short_description}}</p>
-            <span class="product-price">R${{number_format($product->discount ? $product->price * (1 - $product->discount) : $product->price, 2, ',', ' ')}}</span>
             @if($product->discount)
+            <div class="">                
                 <span class="product-actual-price">R${{number_format($product->price, 2, ',', ' ')}}</span>
-                <span class="product-discount-tag">({{$product->discount * 100}}% off)</span>
+                <div class="">
+                    <span class="product-price">R${{number_format($product->price * (1 - $product->discount), 2, ',', ' ')}}</span>
+                    <span class="product-discount-tag">-{{$product->discount * 100}}% off</span>
+                </div>
+            </div>
             @endif
-            <p class="product-sub-heading">Tamanho:</p>
+            <div class="">
+                <p class="product-sub-heading">Tamanho:</p>
 
-            <input type="radio" name="size" value="PP" id="PP-size" hidden checked>
-            <label for="PP-size" class="size-label-btn checked">PP</label>
-            <input type="radio" name="size" value="P" hidden id="P-size">
-            <label for="P-size" class="size-label-btn">P</label>
-            <input type="radio" name="size" value="M" hidden id="M-size">
-            <label for="M-size" class="size-label-btn">M</label>
-            <input type="radio" name="size" value="G" hidden id="G-size">
-            <label for="G-size" class="size-label-btn">G</label>
-            <input type="radio" name="size" value="GG" hidden id="GG-size">
-            <label for="GG-size" class="size-label-btn">GG</label>
-
-            <button class="btn-product cart-btn">adicionar ao carrinho</button>
-            <button class="btn-product">Comprar agora</button>
+                <input type="radio" name="size" value="PP" id="PP-size" hidden checked>
+                <label for="PP-size" class="size-label-btn checked">PP</label>
+                <input type="radio" name="size" value="P" hidden id="P-size">
+                <label for="P-size" class="size-label-btn">P</label>
+                <input type="radio" name="size" value="M" hidden id="M-size">
+                <label for="M-size" class="size-label-btn">M</label>
+                <input type="radio" name="size" value="G" hidden id="G-size">
+                <label for="G-size" class="size-label-btn">G</label>
+                <input type="radio" name="size" value="GG" hidden id="GG-size">
+                <label for="GG-size" class="size-label-btn">GG</label>
+            </div>
+        
+            <div class="d-flex w-100">
+                <button class="btn-product">adicionar ao carrinho</button>
+                <button class="btn-product cart-btn">Comprar agora</button>
+            </div>
         </div>
     </section>
 

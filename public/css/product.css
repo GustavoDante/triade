@@ -6,7 +6,7 @@
 }
 
 .image-slider{
-    height: 500px;
+    height: 30rem;
     position: relative;
     background-size: cover;
     display: flex;
@@ -24,6 +24,7 @@
     background: #fff;
     border-radius: 5px;
     align-self: center;
+    min-width: 70px;
 }
 
 .product-images img{
@@ -41,52 +42,51 @@
 
 .details .product-brand{
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .details .product-short-description{
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     height: auto;
-    margin: 15px 0 30px;
+    margin: 0.75rem 0 1.2rem;
 }
 
 .product-price{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.4rem;
 }
 
 .product-actual-price{
-    font-size: 30px;
+    font-size: 1.4rem;
     opacity: 0.5;
     text-decoration: line-through;
-    margin: 0 20px;
     font-weight: 300;
 }
 
 .product-discount-tag{
     color: #ff7d7d;
-    font-size: 20px;
+    font-size: 0.938rem;
 }
 
 .product-sub-heading{
-    font-size: 30px;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    margin: 60px 0 10px;
+    margin: 30px 0 10px;
     font-weight: 300;
 }
 
 .size-label-btn{
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 35px;
+    height: 35px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     border: 1px solid #383838;
     border-radius: 50%;
     margin: 10px;
     margin-left: 0;
-    line-height: 80px;
+    line-height: 35px;
     text-transform: uppercase;
     color: #383838;
     cursor: pointer;
@@ -99,12 +99,12 @@
 
 .btn-product{
     width: 48%;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     background: none;
     border: 1px solid #383838;
     color: #383838;
-    font-size: 20px;
+    font-size: 0.938rem;
     cursor: pointer;
     margin: 80px 0;
     text-transform: capitalize;
@@ -112,7 +112,7 @@
 }
 
 .cart-btn{
-    margin-right: 2%;
+    margin-left: 2%;
     background: #383838;
     color: #fff;
 }

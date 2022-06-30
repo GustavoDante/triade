@@ -76,11 +76,11 @@
             let containerWidth = containerDimenstions.width;
 
             nxtBtn[i].addEventListener('click', () => {
-                item.scrollLeft += (containerWidth/2);
+                item.scrollLeft += (containerWidth/1.3);
             })
 
             preBtn[i].addEventListener('click', () => {
-                item.scrollLeft -= (containerWidth/2);
+                item.scrollLeft -= (containerWidth/1.3);
             })
         })
     </script>
