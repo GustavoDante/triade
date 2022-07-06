@@ -21,13 +21,12 @@
                 <span class="product-actual-price">R${{number_format($product->price, 2, ',', ' ')}}</span>
                 <div class="">
                     <span class="product-price">R${{number_format($product->price * (1 - $product->discount), 2, ',', ' ')}}</span>
-                    <span class="product-discount-tag">-{{$product->discount * 100}}% off</span>
+                    <span class="product-discount-tag">-{{$product->discount * 100}}%off</span>
                 </div>
             </div>
             @endif
-            <div class="">
-                <p class="product-sub-heading">Tamanho:</p>
-
+            <p class="product-sub-heading">Tamanho:</p>
+            <div class="div-sizes">
                 <input type="radio" name="size" value="PP" id="PP-size" hidden checked>
                 <label for="PP-size" class="size-label-btn checked">PP</label>
                 <input type="radio" name="size" value="P" hidden id="P-size">

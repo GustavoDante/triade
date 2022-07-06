@@ -23,24 +23,21 @@
                       128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></button>
               </div>
               <a href="#"><img src="{{asset('img/user.png')}}" alt=""></a>
-              <a href="#" go data-target="#exampleModalCenter" id="test-button"><img src="{{asset('img/cart.png')}}" alt=""></a>
+              <a href="{{route('website.cart')}}" id="test-button"><img src="{{asset('img/cart.png')}}" alt=""></a>
           </div>
         </div>
     </div>    
 </nav>
 <div  class="border-bot">
     <ul class="links-container">
-        <li class="link-item"><a href="#" class="link active-link">Inicial</a></li>
-        <li class="link-item"><a href="#" class="link">Mulher</a></li>
-        <li class="link-item"><a href="#" class="link">Homem</a></li>
-        <li class="link-item"><a href="#" class="link">Criança</a></li>
-        <li class="link-item"><a href="#" class="link">acessórios</a></li>
+        <li class="link-item"><a href="{{route('website.home')}}" class="link active-link">Inicial</a></li>
+        <li class="link-item"><a href="{{route('website.womans')}}" class="link">Mulher</a></li>
+        <li class="link-item"><a href="{{route('website.mans')}}" class="link">Homem</a></li>
+        <li class="link-item"><a href="{{route('website.childs')}}" class="link">Infantil</a></li>
+        <li class="link-item"><a href="{{route('website.accessories')}}" class="link">Acessórios</a></li>
       </ul>
 </div>
 
-
-
-@include('layouts.cart')
 @push('scripts')
     <script>
         $(document).ready(function () {

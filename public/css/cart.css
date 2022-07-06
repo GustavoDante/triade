@@ -1,0 +1,14 @@
+.container-cart{
+    display: flex;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.logo-product-cart{
+    width: 100px;
+    height: 100px;
+}
+
+.img-product-cart{
+    width: 100%;
+}
