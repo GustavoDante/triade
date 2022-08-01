@@ -3,11 +3,7 @@
 @section('content')
 
     <header class="hero-section ">
-        <img class="img-header" src="{{asset('img/header.png')}}" alt="">
-        <div class="content">
-            <img src="{{asset("img/light-logo.png")}}" class="logo" alt="">
-            <p class="sub-heading">Preço baixo, qualidade e beleza em um só lugar</p>
-        </div>
+        <img class="img-header" src="{{asset('img/banner-childrens.png')}}" alt="">
     </header>
 
     <section class="product">

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md">
     <div class="nav nav-content">
         <a href="{{route('website.home')}}">
-            <img src="{{asset('img/dark-logo.png')}}" class="brand-logo" alt="">
+            <img src="{{asset('img/name-logo-black.png')}}" class="brand-logo" alt="">
         </a>
         <div class="">
             <button class="navbar-toggler" type="button" data-toggle="collapse"

@@ -11,17 +11,17 @@
 
 body, input, button {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smooting: antialiased;
+    font-family: 'Poppins', sans-serif !important;
+    -webkit-font-smooting: antialiased !important;
 }
 
 .root{
-    min-height: calc(100vh - 200px);
+    margin: 0 auto;
 }
 
 .img-header{
     width: 100%;
-    height: 100%;
+    height: 50rem;
     background-size: cover;
     display: flex;
     justify-content: center;
